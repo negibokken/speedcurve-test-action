@@ -21,7 +21,7 @@ jobs:
         uses: ./
         with:
           api_key: ${{ secrets.SPEEDCURVE_API_KEY }}
-          site_id: 258596
+          site_id: 260051
           note: speedcurve-test-action running from ${{ steps.github.outputs.ref }}
 
       - run: echo "The SpeedCurve deploy ID is ${{ steps.speedcurve_deploy.outputs.deploy_id }}"
